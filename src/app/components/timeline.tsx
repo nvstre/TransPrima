@@ -42,7 +42,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Our Journey
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Follow the timeline of Transprima's growth and achievements over the years.
+          Follow the timeline of Transprima&apos;s growth and achievements over the years.
         </p>
       </div>
 

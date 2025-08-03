@@ -4,9 +4,6 @@ import { FloatingPathsBackground } from "./components/floating-paths";
 import { Hero } from "./components/animated-hero";
 import { Timeline } from "./components/timeline";
 
-import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
-import { Code, Compass, Database, FileText, Globe, Layers, Lightbulb, Shield } from "lucide-react";
-
 export default function Page() {
   return (
     <section id="features" className="relative z-20">
