@@ -4,7 +4,6 @@ import { FloatingPathsBackground } from "./components/floating-paths";
 import { Hero } from "./components/animated-hero";
 import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
-import { ClockIcon, GearIcon, GlobeIcon, PersonIcon, RocketIcon } from "@radix-ui/react-icons";
 import { CustomersSection } from "./components/customers-section";
 import { Footer7 } from "./components/footer";
 import StatsSection from "@/app/components/stats-default";
