@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, Transition } from "framer-motion";
 
-// Tip explicit pentru transition
+
 const transition: Transition = {
   type: "spring",
   mass: 0.5,
@@ -106,7 +106,7 @@ export const ProductItem = ({
   );
 };
 
-// Tip corect în loc de `any`
+
 export const HoveredLink = ({
   children,
   ...rest

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react"; 
 import { motion } from "framer-motion"; 
-import { MoveRight, PhoneCall } from "lucide-react"; 
+import { MoveRight, PhoneCall, ChevronDown } from "lucide-react"; 
 import { Button } from "@/app/components/button"; 
 
 function Hero() { 
@@ -26,9 +26,6 @@ function Hero() {
       <div className="container mx-auto"> 
         <div className="flex gap-10 py-20 lg:py-40 items-center justify-center flex-col max-w-4xl mx-auto"> 
           <div> 
-            <Button variant="secondary" size="sm" className="gap-4" onClick={() => window.open('/blog', '_blank')}> 
-              Read our launch article <MoveRight className="w-4 h-4" /> 
-            </Button> 
           </div> 
           <div className="flex gap-6 flex-col"> 
             <h1 className="text-6xl md:text-8xl max-w-3xl tracking-tighter text-center font-regular"> 
@@ -38,7 +35,7 @@ function Hero() {
                 {titles.map((title, index) => ( 
                   <motion.span 
                     key={index} 
-                    className="absolute font-semibold" 
+                    className="absolute font-bold bg-gradient-to-b from-white to-gray-200 bg-clip-text text-transparent" 
                     initial={{ opacity: 0, y: "-100" }} 
                     transition={{ type: "spring", stiffness: 50 }} 
                     animate={ 
@@ -59,17 +56,25 @@ function Hero() {
               </span> 
             </h1> 
 
-            <p className="text-xl md:text-2xl leading-relaxed tracking-tight text-muted-foreground max-w-3xl text-center"> 
+            <p className="text-xl md:text-2xl leading-relaxed tracking-tight text-gray-400 max-w-3xl text-center"> 
 Oferim servicii de transport internațional rapide, sigure și adaptate nevoilor tale. Oriunde ai nevoie, Trans Prima livrează cu profesionalism.
             </p> 
           </div> 
           <div className="flex flex-row gap-5"> 
-            <Button size="lg" className="gap-4 text-lg px-6 py-6" variant="outline" onClick={() => window.location.href = '/contact'}> 
-              Cere o ofertă personalizată <PhoneCall className="w-5 h-5" /> 
+            <Button size="lg" className="gap-4 text-lg px-6 py-6 hover:scale-105 transition-transform duration-200 bg-white text-black shadow-lg hover:shadow-xl rounded-full font-bold" onClick={() => window.location.href = '/contact'}> 
+              <PhoneCall className="w-5 h-5" /> Cere o ofertă personalizată 
             </Button> 
-            <Button size="lg" className="gap-4 text-lg px-6 py-6" onClick={() => window.location.href = '/signup'}> 
+            <Button size="lg" className="gap-4 text-lg px-6 py-6 hover:scale-105 transition-transform duration-200" onClick={() => document.getElementById('features-section')?.scrollIntoView({ behavior: 'smooth' })}> 
                Află mai multe despre servicii <MoveRight className="w-5 h-5" /> 
             </Button> 
+          </div> 
+          <div className="flex justify-center mt-8">
+            <motion.div 
+              animate={{ y: [0, 10, 0] }} 
+              transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }} 
+            > 
+              <ChevronDown className="w-12 h-12 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" /> 
+            </motion.div> 
           </div> 
         </div> 
       </div> 

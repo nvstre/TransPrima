@@ -10,7 +10,14 @@ export function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/70 dark:bg-black/70 backdrop-blur-md border-b border-black/10 dark:border-white/10">
-      <Link href="/" className="font-bold text-xl mr-8">Transprima</Link>
+      <div className="flex items-center space-x-3">
+        <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+          <span className="text-white font-bold text-sm">T</span>
+        </div>
+        <Link href="/" className="font-bold text-xl text-black dark:text-white">
+          transprima
+        </Link>
+      </div>
       <div className="flex-1 flex justify-center">
         <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Products">
