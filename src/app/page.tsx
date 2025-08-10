@@ -56,53 +56,7 @@ const customers = [
   },
 ]
 
-const features = [
-  {
-    Icon: RocketIcon,
-    name: "Fast Delivery",
-    description: "Express shipping solutions with guaranteed delivery times across the country.",
-    href: "/",
-    cta: "Get Quote",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
-  },
-  {
-    Icon: GlobeIcon,
-    name: "Route Tracking",
-    description: "Real-time GPS tracking for all your shipments with live updates.",
-    href: "/",
-    cta: "Track Now",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
-  },
-  {
-    Icon: GearIcon,
-    name: "Fleet Management",
-    description: "Advanced fleet management system for optimal route planning.",
-    href: "/",
-    cta: "Learn More",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
-  },
-  {
-    Icon: ClockIcon,
-    name: "24/7 Support",
-    description: "Round-the-clock customer support for all your shipping needs.",
-    href: "/",
-    cta: "Contact Us",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
-  },
-  {
-    Icon: PersonIcon,
-    name: "Dedicated Drivers",
-    description: "Professional and experienced drivers committed to safe delivery.",
-    href: "/",
-    cta: "Our Team",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
-  },
-];
+
 
 export function GlowingEffectDemo() {
   return (
