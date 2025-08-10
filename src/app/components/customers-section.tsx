@@ -1,6 +1,4 @@
 import React from "react";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 import { AnimatedGroup } from "@/app/components/animated-group";
 import type { Variants } from "framer-motion";
 
