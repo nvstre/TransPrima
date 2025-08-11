@@ -1,6 +1,5 @@
 'use client';
 
-import React from "react";
 import { FloatingPathsBackground } from "./components/floating-paths";
 import { Hero } from "./components/animated-hero";
 import { Timeline } from "@/components/ui/timeline";
