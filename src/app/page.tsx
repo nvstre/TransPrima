@@ -57,7 +57,7 @@ const customers = [
 
 
 
-export function GlowingEffectDemo() {
+export function GlowingEffectShit() {
   return (
     <div className="animate-in fade-in duration-1000">
       <ul className="grid grid-cols-1 grid-rows-none gap-6 md:grid-cols-12 md:grid-rows-3 lg:gap-6 xl:max-h-[40rem] xl:grid-rows-2">
@@ -163,7 +163,7 @@ export default function Page() {
                   Din 1994, Trans Prima oferă soluții flexibile și sigure pentru transport intern și internațional – fie în regim LTL (grupaj) sau FTL (camion complet), cu garanție de asigurare și logistică dedicată
                 </p>
               </div>
-              <GlowingEffectDemo />
+              <GlowingEffect />
             </div>
           </div>
         
