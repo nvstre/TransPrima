@@ -1,7 +1,6 @@
 'use client';
 
 import { Footer7 } from "../components/footer";
-import Image from "next/image";
 
 export default function AboutPage() {
   return (

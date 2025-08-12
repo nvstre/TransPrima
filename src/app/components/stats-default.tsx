@@ -1,5 +1,5 @@
 "use client";
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
 function CountUpAnimation({ end, duration = 2 }: { end: number; duration?: number }) {
