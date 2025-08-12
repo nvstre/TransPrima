@@ -81,7 +81,13 @@ export default function Page() {
               <GlowingEffectDemo />
             </div>
           </div>
-        
+              <StatsSection />        
+         <div className="w-full pt-8 pb-4 px-4 md:px-8 lg:px-10 bg-transparent">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-4xl font-bold lg:text-5xl text-white mb-4">Partenerii noștri</h2>
+            </div>
+            <CustomersSection customers={customers} />
         <Timeline data={[
           {
             title: "1994",
@@ -256,12 +262,6 @@ export default function Page() {
              ),
            },
         ]} />
-           <StatsSection />        
-         <div className="w-full py-20 px-4 md:px-8 lg:px-10">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-            </div>
-            <CustomersSection customers={customers} />
             <Footer7 />
           </div>
         </div>

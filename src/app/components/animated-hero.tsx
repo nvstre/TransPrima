@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from "react"; 
-import { motion } from "framer-motion"; 
-import { MoveRight, PhoneCall, ChevronDown } from "lucide-react"; 
-import { Button } from "@/app/components/button"; 
+import { useEffect, useMemo, useState } from "react";
+import { motion } from "framer-motion";
+import { MoveRight, PhoneCall, ChevronDown } from "lucide-react";
+import { Button } from "@/app/components/button";
+import { PlasticButton } from "@/components/ui/plastic-button"; 
 
 function Hero() { 
   const [titleNumber, setTitleNumber] = useState(0); 
@@ -60,10 +61,10 @@ function Hero() {
 Oferim servicii de transport internațional rapide, sigure și adaptate nevoilor tale. Oriunde ai nevoie, Trans Prima livrează cu profesionalism.
             </p> 
           </div> 
-          <div className="flex flex-row gap-5"> 
-            <Button size="lg" className="gap-4 text-lg px-6 py-6 hover:scale-105 transition-transform duration-200 bg-white text-black shadow-lg hover:shadow-xl rounded-full font-bold" onClick={() => window.location.href = '/contact'}> 
-              <PhoneCall className="w-5 h-5" /> Cere o ofertă personalizată 
-            </Button> 
+          <div className="flex flex-row gap-5">
+            <div onClick={() => window.location.href = '/contact'} className="cursor-pointer">
+              <PlasticButton text="Cere o ofertă personalizată" icon={<PhoneCall className="w-5 h-5" />} />
+            </div> 
             <Button size="lg" className="gap-4 text-lg px-6 py-6 hover:scale-105 transition-transform duration-200" onClick={() => document.getElementById('features-section')?.scrollIntoView({ behavior: 'smooth' })}> 
                Află mai multe despre servicii <MoveRight className="w-5 h-5" /> 
             </Button> 

@@ -37,10 +37,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-xl md:text-5xl mb-4 text-white drop-shadow-[0_0_6px_rgba(255,255,255,0.5)] max-w-4xl font-bold">
+        <h2 className="text-xl md:text-5xl mb-4 text-white max-w-4xl font-bold">
           Povestea noastră
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-base md:text-lg max-w-sm">
+        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-lg max-w-sm">
           De la înființare până în prezent, Trans Prima s-a consolidat prin dezvoltare constantă, investiții în logistică și servicii de calitate, devenind un partener de încredere pe piața transporturilor.
         </p>
       </div>
@@ -55,13 +55,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
+              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-white dark:text-white ">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-white dark:text-white">
                 {item.title}
               </h3>
               {item.content}{" "}

@@ -12,22 +12,32 @@ interface MapProps {
     end: { lat: number; lng: number; label?: string };
   }>;
   lineColor?: string;
+  forceDarkTheme?: boolean;
 }
 
 export function WorldMap({
   dots = [],
   lineColor = "#0ea5e9",
+  forceDarkTheme = false,
 }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
-  const map = new DottedMap({ height: 100, grid: "diagonal" });
+  // Focus on Romania, Italy, Germany, Netherlands for trucking operations
+  const map = new DottedMap({ 
+    height: 100, 
+    grid: "diagonal",
+    region: {
+      lat: { min: 35, max: 65 },
+      lng: { min: -15, max: 35 }
+    }
+  });
 
   const { theme } = useTheme();
 
   const svgMap = map.getSVG({
     radius: 0.22,
-    color: theme === "dark" ? "#FFFFFF40" : "#00000040",
+    color: (forceDarkTheme || theme === "dark") ? "#FFFFFF40" : "#00000040",
     shape: "circle",
-    backgroundColor: theme === "dark" ? "black" : "white",
+    backgroundColor: "transparent",
   });
 
   const projectPoint = (lat: number, lng: number) => {
@@ -46,10 +56,10 @@ export function WorldMap({
   };
 
   return (
-    <div className="w-full aspect-[2/1] dark:bg-black bg-white rounded-lg  relative font-sans">
+    <div className="w-full aspect-[2/1] bg-transparent rounded-lg relative font-sans">
       <Image
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-        className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
+        className="h-full w-full pointer-events-none select-none"
         alt="world map"
         height="495"
         width="1056"
