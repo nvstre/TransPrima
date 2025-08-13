@@ -1,6 +1,5 @@
 'use client';
 
-import { BeamsBackground } from "../components/beams-background";
 import { Footer7 } from "../components/footer";
 import { useState } from "react";
 

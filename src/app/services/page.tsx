@@ -4,7 +4,6 @@ import { Tabs } from "@/components/ui/tabs";
 import { Footer7 } from "../components/footer";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { Globe, Truck, Warehouse, Package } from "lucide-react";
-import Link from "next/link";
 
 export default function ServicesPage() {
   const tabs = [
