@@ -129,8 +129,8 @@ export default function ServicesPage() {
 
 
 
-        <div className="pt-40 pb-16 relative z-10">
-          <div className="text-center mb-16">
+        <div className="pt-40 pb-20 relative z-10">
+          <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
               Serviciile Noastre
             </h1>
@@ -141,18 +141,18 @@ export default function ServicesPage() {
           
           <div className="relative max-w-7xl mx-auto px-4">
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 relative z-10">
               {/* Left side - Tabs */}
               <div className="relative lg:pr-8">
-                <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col w-full items-start justify-start">
+                <div className="h-[24rem] md:h-[32rem] lg:h-[40rem] [perspective:1000px] relative flex flex-col w-full items-start justify-start">
                   <Tabs tabs={tabs} />
                 </div>
               </div>
               
               {/* Right side - Bento grid */}
-              <div className="relative lg:pl-8">
-                <div className="h-[20rem] md:h-[40rem]">
-                  <div className="text-center mb-8">
+              <div className="relative lg:pl-8 mt-8 lg:mt-0">
+                <div className="h-auto lg:h-[40rem]">
+                  <div className="text-center mb-6">
                     <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
                       Caracteristici Avansate
                     </h2>
@@ -160,7 +160,7 @@ export default function ServicesPage() {
                       Tehnologii moderne pentru servicii de calitate superioară
                     </p>
                   </div>
-                  <BentoGrid className="max-w-4xl mx-auto mt-8 h-full">
+                  <BentoGrid className="max-w-4xl mx-auto mt-6 h-auto lg:h-full">
                      <BentoGridItem
                        title="Urmărire în Timp Real"
                        description="Monitorizați transporturile 24/7 cu sistemul nostru avansat de urmărire GPS."
@@ -193,6 +193,9 @@ export default function ServicesPage() {
             {/* Vertical divider line - positioned to span from title to footer */}
             <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent opacity-30 transform -translate-x-1/2 z-20"></div>
           </div>
+          
+          {/* Extra spacing for mobile */}
+          <div className="h-16 md:h-8"></div>
         </div>
         <Footer7 />
       </div>

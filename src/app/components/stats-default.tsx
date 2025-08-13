@@ -34,21 +34,21 @@ export default function StatsSection() {
                     <p className="text-neutral-600 dark:text-neutral-400">Rezultatele noastre reflectă experiența, infrastructura și angajamentul de a livra la timp, în fiecare zi.</p>
                 </div>
 
-                <div className="grid gap-12 divide-y *:text-center md:grid-cols-3 md:gap-2 md:divide-x md:divide-y-0">
-                    <div className="space-y-4">
-                        <div className="text-5xl font-bold">
+                <div className="grid gap-8 divide-y divide-gray-200/50 *:text-center md:grid-cols-3 md:gap-2 md:divide-x md:divide-x-gray-200/50 md:divide-y-0">
+                    <div className="space-y-3">
+                        <div className="text-3xl md:text-4xl font-bold">
                             <CountUpAnimation end={1200} />
                         </div>
                         <p className="text-neutral-600 dark:text-neutral-400">Curse anuale</p>
                     </div>
-                    <div className="space-y-4">
-                        <div className="text-5xl font-bold">
+                    <div className="space-y-3">
+                        <div className="text-3xl md:text-4xl font-bold">
                             <CountUpAnimation end={45} />
                         </div>
                         <p className="text-neutral-600 dark:text-neutral-400">Capete tiruri</p> 
                     </div>
-                    <div className="space-y-4">
-                        <div className="text-5xl font-bold">
+                    <div className="space-y-3">
+                        <div className="text-3xl md:text-4xl font-bold">
                             <CountUpAnimation end={60} />
                         </div>
                         <p className="text-neutral-600 dark:text-neutral-400">Semiremorci</p>

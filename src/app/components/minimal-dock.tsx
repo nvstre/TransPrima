@@ -61,7 +61,7 @@ export function MinimalDock() {
           <div className="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center">
             <span className="text-white font-bold text-sm">T</span>
           </div>
-          <span className="font-bold text-black dark:text-white text-lg">Trans Prima</span>
+          <span className="font-bold text-black dark:text-white text-lg hidden md:block">Trans Prima</span>
         </div>
         <DockItem
           icon={
