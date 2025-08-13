@@ -2,6 +2,7 @@ import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
 import { GlowingEffect } from "@/app/components/glowing-effect";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 export function GlowingEffectDemo() {
   return (
@@ -58,48 +59,50 @@ interface GridItemProps {
 export const GridItem = ({ area, icon, title, description, image }: GridItemProps) => {
   return (
     <li className={cn("min-h-[16rem] list-none", area)}>
-      <div className="relative h-full rounded-xl border border-neutral-200 dark:border-neutral-800 p-1 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer group">
-        <GlowingEffect
-          spread={40}
-          glow={true}
-          disabled={false}
-          proximity={64}
-          inactiveZone={0.01}
-          borderWidth={2}
-        />
-        <div className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-lg bg-white dark:bg-neutral-900 p-6 transition-all duration-300 group-hover:bg-neutral-50 dark:group-hover:bg-neutral-800">
-          {image && (
-            <div className="absolute inset-0 rounded-lg overflow-hidden">
-              <Image
-                src={image}
-                alt=""
-                fill
-                className="object-cover grayscale opacity-5 group-hover:opacity-8 transition-opacity duration-300"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          )}
-          <div className="relative flex flex-1 flex-col justify-between gap-4">
-            <div className="w-fit rounded-lg bg-neutral-100 dark:bg-neutral-800 p-3 transition-all duration-300 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700">
-              {icon}
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
-                {title}
-              </h3>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                {description}
-              </p>
-              <div className="flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span>Discover more</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+      <Link href="/services" className="block h-full">
+        <div className="relative h-full rounded-xl border border-neutral-200 dark:border-neutral-800 p-1 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer group">
+          <GlowingEffect
+            spread={40}
+            glow={true}
+            disabled={false}
+            proximity={64}
+            inactiveZone={0.01}
+            borderWidth={2}
+          />
+          <div className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-lg bg-white dark:bg-neutral-900 p-6 transition-all duration-300 group-hover:bg-neutral-50 dark:group-hover:bg-neutral-800">
+            {image && (
+              <div className="absolute inset-0 rounded-lg overflow-hidden">
+                <Image
+                  src={image}
+                  alt=""
+                  fill
+                  className="object-cover grayscale opacity-5 group-hover:opacity-8 transition-opacity duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            )}
+            <div className="relative flex flex-1 flex-col justify-between gap-4">
+              <div className="w-fit rounded-lg bg-neutral-100 dark:bg-neutral-800 p-3 transition-all duration-300 group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700">
+                {icon}
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                  {title}
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  {description}
+                </p>
+                <div className="flex items-center gap-2 text-sm text-white dark:text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span>Discover more</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </li>
   );
 };

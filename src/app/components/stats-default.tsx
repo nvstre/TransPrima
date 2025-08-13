@@ -30,8 +30,8 @@ export default function StatsSection() {
         <section className="py-12 md:py-20">
             <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
                 <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
-                    <h2 className="text-4xl font-bold lg:text-5xl">Date care inspiră încredere</h2>
-                    <p className="text-neutral-600 dark:text-neutral-400">Performanța financiară solidă și structura echipei Trans Prima îl transformă într-un partener stabil și responsabil în transportul rutier de mărfuri.</p>
+                    <h2 className="text-4xl font-bold lg:text-5xl">Cifre care definesc performanța noastră</h2>
+                    <p className="text-neutral-600 dark:text-neutral-400">Rezultatele noastre reflectă experiența, infrastructura și angajamentul de a livra la timp, în fiecare zi.</p>
                 </div>
 
                 <div className="grid gap-12 divide-y *:text-center md:grid-cols-3 md:gap-2 md:divide-x md:divide-y-0">

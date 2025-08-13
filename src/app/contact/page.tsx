@@ -1,5 +1,6 @@
 'use client';
 
+import { BeamsBackground } from "../components/beams-background";
 import { Footer7 } from "../components/footer";
 import { useState } from "react";
 
@@ -48,23 +49,23 @@ export default function ContactPage() {
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="w-6 h-6 bg-neutral-900 dark:bg-neutral-100 rounded-full flex items-center justify-center mt-1">
+                      <svg className="w-3 h-3 text-white dark:text-neutral-900" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                       </svg>
                     </div>
                     <div>
                       <h3 className="font-semibold text-neutral-900 dark:text-neutral-100">Adresa</h3>
                       <p className="text-neutral-600 dark:text-neutral-400">
-                        Strada Principală nr. 123<br />
-                        Cluj-Napoca, România
+                        Soseaua de Centura nr. 162<br />
+                        Alba Iulia, Alba, România
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="w-6 h-6 bg-neutral-900 dark:bg-neutral-100 rounded-full flex items-center justify-center mt-1">
+                      <svg className="w-3 h-3 text-white dark:text-neutral-900" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                       </svg>
                     </div>
@@ -77,8 +78,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="w-6 h-6 bg-neutral-900 dark:bg-neutral-100 rounded-full flex items-center justify-center mt-1">
+                      <svg className="w-3 h-3 text-white dark:text-neutral-900" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                       </svg>
@@ -92,28 +93,19 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="w-6 h-6 bg-neutral-900 dark:bg-neutral-100 rounded-full flex items-center justify-center mt-1">
+                      <svg className="w-3 h-3 text-white dark:text-neutral-900" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                       </svg>
                     </div>
                     <div>
                       <h3 className="font-semibold text-neutral-900 dark:text-neutral-100">Program</h3>
                       <p className="text-neutral-600 dark:text-neutral-400">
-                        Luni - Vineri: 08:00 - 18:00<br />
-                        Sâmbătă: 08:00 - 14:00
+                        Luni - Vineri: 09:00 - 18:00<br />
+                        Sâmbătă: 09:00 - 15:00
                       </p>
                     </div>
                   </div>
-                </div>
-
-                <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                  <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">
-                    Urgențe 24/7
-                  </h3>
-                  <p className="text-blue-700 dark:text-blue-300 text-sm">
-                    Pentru situații urgente în afara programului, sunați la +40 123 456 790
-                  </p>
                 </div>
               </div>
 
@@ -136,7 +128,7 @@ export default function ContactPage() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
+                        className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-neutral-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
                       />
                     </div>
                     <div>
@@ -150,7 +142,7 @@ export default function ContactPage() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
+                        className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-neutral-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
                       />
                     </div>
                   </div>
@@ -166,7 +158,7 @@ export default function ContactPage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
+                        className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-neutral-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
                       />
                     </div>
                     <div>
@@ -179,7 +171,7 @@ export default function ContactPage() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
+                        className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-neutral-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
                       />
                     </div>
                   </div>
@@ -195,14 +187,14 @@ export default function ContactPage() {
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
+                      className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-neutral-500 focus:border-transparent bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100"
                       placeholder="Descrieți nevoile dumneavoastră de transport..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+                    className="w-full bg-neutral-900 hover:bg-neutral-800 dark:bg-neutral-100 dark:hover:bg-neutral-200 text-white dark:text-neutral-900 font-semibold py-3 px-6 rounded-lg transition-colors"
                   >
                     Trimite mesajul
                   </button>

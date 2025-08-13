@@ -65,7 +65,7 @@ Oferim servicii de transport internațional rapide, sigure și adaptate nevoilor
             <div onClick={() => window.location.href = '/contact'} className="cursor-pointer">
               <PlasticButton text="Cere o ofertă personalizată" icon={<PhoneCall className="w-5 h-5" />} />
             </div> 
-            <Button size="lg" className="gap-4 text-lg px-6 py-6 hover:scale-105 transition-transform duration-200" onClick={() => document.getElementById('features-section')?.scrollIntoView({ behavior: 'smooth' })}> 
+            <Button size="lg" className="gap-4 text-lg px-6 py-6 hover:scale-105 transition-transform duration-200" onClick={() => document.getElementById('servici')?.scrollIntoView({ behavior: 'smooth' })}> 
                Află mai multe despre servicii <MoveRight className="w-5 h-5" /> 
             </Button> 
           </div> 

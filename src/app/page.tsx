@@ -17,37 +17,37 @@ const customers = [
     height: 20,
   },
   {
-    src: "https://html.tailus.io/blocks/customers/column.svg",
+    src: "https://html.tailus.io/blocks/customers/nvidia.svg",
     alt: "Column Logo",
     height: 16,
   },
   {
-    src: "https://html.tailus.io/blocks/customers/github.svg",
+    src: "https://html.tailus.io/blocks/customers/nvidia.svg",
     alt: "GitHub Logo",
     height: 16,
   },
   {
-    src: "https://html.tailus.io/blocks/customers/nike.svg",
+    src: "https://html.tailus.io/blocks/customers/nvidia.svg",
     alt: "Nike Logo",
     height: 20,
   },
   {
-    src: "https://html.tailus.io/blocks/customers/lemonsqueezy.svg",
+    src: "https://html.tailus.io/blocks/customers/nvidia.svg",
     alt: "Lemon Squeezy Logo",
     height: 20,
   },
   {
-    src: "https://html.tailus.io/blocks/customers/laravel.svg",
+    src: "https://html.tailus.io/blocks/customers/nvidia.svg",
     alt: "Laravel Logo",
     height: 16,
   },
   {
-    src: "https://html.tailus.io/blocks/customers/lilly.svg",
+    src: "https://html.tailus.io/blocks/customers/nvidia.svg",
     alt: "Lilly Logo",
     height: 28,
   },
   {
-    src: "https://html.tailus.io/blocks/customers/openai.svg",
+    src: "https://html.tailus.io/blocks/customers/nvidia.svg",
     alt: "OpenAI Logo",
     height: 24,
   },
@@ -68,19 +68,19 @@ export default function Page() {
             </div>
           </FloatingPathsBackground>
           
-          <div className="w-full py-20 px-4 md:px-8 lg:px-10">
+          <section id="servici" className="w-full py-20 px-4 md:px-8 lg:px-10">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
                   Serviciile noastre profesionale de transport
                 </h2>
                 <p className="text-neutral-600 dark:text-neutral-400 text-lg max-w-2xl mx-auto">
-                  Din 1994, Trans Prima oferă soluții flexibile și sigure pentru transport intern și internațional – fie în regim LTL (grupaj) sau FTL (camion complet), cu garanție de asigurare și logistică dedicată
+                  Din 1994, Trans Prima oferă soluții flexibile și sigure pentru transport intern și internațional, fie în regim LTL (grupaj) sau FTL (camion complet), cu garanție de asigurare și logistică dedicată
                 </p>
               </div>
               <GlowingEffectDemo />
             </div>
-          </div>
+          </section>
               <StatsSection />        
          <div className="w-full pt-8 pb-4 px-4 md:px-8 lg:px-10 bg-transparent">
           <div className="max-w-7xl mx-auto">
@@ -99,73 +99,29 @@ export default function Page() {
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
                   Compania a fost înființată pe 21 aprilie 1994 în Sântimbru, județul Alba, cu obiect de activitate în transporturile rutiere de mărfuri.
                 </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <Image
-                    src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
-                    alt="olympics image"
-                    width={500}
-                    height={500}
-                    className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                  />
-                  <Image
-                    src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
-                    alt="olympics image"
-                    width={500}
-                    height={500}
-                    className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                  />
-                  <Image
-                    src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
-                    alt="olympics image"
-                    width={500}
-                    height={500}
-                    className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                  />
-                  <Image
-                    src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
-                    alt="olympics image"
-                    width={500}
-                    height={500}
-                    className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                  />
-                </div>
               </div>
             ),
           },
           {
-            title: "2014",
+            title: "2010",
             content: (
               <div>
                 <h3 className="text-neutral-900 dark:text-neutral-100 text-lg md:text-xl font-bold mb-4">
-                  Dezvoltare continuă a cifrei de afaceri
+                  Extinderea operațiunilor internaționale
                 </h3>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-                  Evoluția economică este constant ascendentă: cifra de afaceri a crescut de la aproximativ 18 milioane RON în 2014
+                  După peste un deceniu de activitate în România, compania a început să opereze curse regulate către piețele europene, consolidându-și reputația de partener de transport de încredere.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <Image
-                    src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
+                    src="https://transprima.ro/wp-content/uploads/2020/02/A_MG_4708-Pano.jpg"
                     alt="olympics image"
                     width={500}
                     height={500}
                     className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                   />
                   <Image
-                    src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
-                    alt="olympics image"
-                    width={500}
-                    height={500}
-                    className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                  />
-                  <Image
-                    src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
-                    alt="olympics image"
-                    width={500}
-                    height={500}
-                    className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                  />
-                  <Image
-                    src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
+                    src="https://transprima.ro/wp-content/uploads/2020/02/slide-tp-2-1200x540.jpg"
                     alt="olympics image"
                     width={500}
                     height={500}
@@ -180,35 +136,35 @@ export default function Page() {
              content: (
                <div>
                  <h3 className="text-neutral-900 dark:text-neutral-100 text-lg md:text-xl font-bold mb-4">
-                   Investiție majoră în logistică și spații operaționale
+                   Platformă logistică modernă
                  </h3>
                  <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-                   În cadrul aniversării a 25 de ani (circa 2019), Trans Prima a inaugurat o platformă logistică modernă lângă Alba Iulia – triplicând capacitatea de depozitare și deservind peste 200 de clienți activi.
+                   Cu ocazia aniversării a 25 de ani, Trans Prima a inaugurat o bază logistică de ultimă generație lângă Alba Iulia, dotată cu echipamente performante și facilități pentru manipularea eficientă a mărfurilor.
                  </p>
                  <div className="grid grid-cols-2 gap-4">
                    <Image
-                     src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
+                     src="https://transprima.ro/wp-content/uploads/2020/02/MG_0539.jpg"
                      alt="olympics image"
                      width={500}
                      height={500}
                      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                    />
                    <Image
-                     src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
+                     src="https://transprima.ro/wp-content/uploads/2020/02/MG_4684.jpg"
                      alt="olympics image"
                      width={500}
                      height={500}
                      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                    />
                    <Image
-                     src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
+                     src="https://transprima.ro/wp-content/uploads/2020/02/MG_4687.jpg"
                      alt="olympics image"
                      width={500}
                      height={500}
                      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                    />
                    <Image
-                     src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
+                     src="https://transprima.ro/wp-content/uploads/2020/02/A_MG_0561-Pano.jpg"
                      alt="olympics image"
                      width={500}
                      height={500}
@@ -223,35 +179,14 @@ export default function Page() {
              content: (
                <div>
                  <h3 className="text-neutral-900 dark:text-neutral-100 text-lg md:text-xl font-bold mb-4">
-                   Flotă proprie și logistică internă solidă
+                   Flotă modernă și echipă dedicată
                  </h3>
                  <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-4">
-                   De-a lungul timpului, compania a consolidat o flotă proprie și a dezvoltat capacități interne de depozitare și manipulare, ajungând în 2024 la o echipă de aproximativ 70 de angajați.
+                   Astăzi, Trans Prima operează cu o flotă proprie modernă și o echipă de profesioniști experimentați, asigurând servicii de transport competitive și adaptate cerințelor fiecărui client.
                  </p>
                  <div className="grid grid-cols-2 gap-4">
                    <Image
-                     src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
-                     alt="olympics image"
-                     width={500}
-                     height={500}
-                     className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                   />
-                   <Image
-                     src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
-                     alt="olympics image"
-                     width={500}
-                     height={500}
-                     className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                   />
-                   <Image
-                     src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
-                     alt="olympics image"
-                     width={500}
-                     height={500}
-                     className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                   />
-                   <Image
-                     src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ywjjv6pml5diu5cwid21"
+                     src="https://transprima.ro/wp-content/uploads/2020/10/slide-tp-1-1-scaled-1.jpg"
                      alt="olympics image"
                      width={500}
                      height={500}

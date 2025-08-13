@@ -52,39 +52,26 @@ export const Tabs = ({
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
             className={cn(
-              "relative px-4 py-2 rounded-full font-bold text-sm transition-all duration-200",
-              "active:scale-[0.98] hover:scale-105 flex justify-center items-center gap-2",
+              "relative px-8 py-2 rounded-full font-bold text-sm transition-all duration-200",
+              "active:scale-[0.98] hover:scale-105 flex justify-center items-center gap-2 min-w-[200px]",
               tabClassName
             )}
             style={{
-              transformStyle: "preserve-3d",
               background: active.value === tab.value 
-                ? `linear-gradient(to bottom, rgb(255, 255, 255), rgb(243, 244, 246))` 
-                : `linear-gradient(to bottom, rgb(156, 163, 175), rgb(107, 114, 128))`,
-              boxShadow: `0 2px 8px 0 rgba(0, 0, 0, 0.15), 0 1.5px 0 0 rgba(255,255,255,0.8) inset, 0 -2px 8px 0 rgba(0, 0, 0, 0.1) inset`,
+                ? `rgb(255, 255, 255)` 
+                : `transparent`,
+              border: active.value === tab.value 
+                ? `1px solid rgba(0, 0, 0, 0.1)`
+                : `1px solid rgba(255, 255, 255, 0.2)`,
             }}
           >
             <span className={cn(
               "relative z-10",
-              active.value === tab.value ? "text-black" : "text-white"
+              active.value === tab.value ? "text-black" : "text-gray-300"
             )}>
               {tab.title}
             </span>
-            <span
-              className="absolute left-1/2 top-0 z-20 w-[80%] h-2/5 -translate-x-1/2 rounded-t-full pointer-events-none"
-              style={{
-                background:
-                  "linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 80%, transparent 100%)",
-                filter: "blur(1.5px)",
-              }}
-            />
-            <span
-              className="absolute inset-0 z-0 rounded-full pointer-events-none"
-              style={{
-                boxShadow:
-                  "0 0 0 2px rgba(0,0,0,0.05) inset, 0 1.5px 0 0 rgba(255,255,255,0.9) inset, 0 -2px 8px 0 rgba(0, 0, 0, 0.08) inset",
-              }}
-            />
+
           </button>
         ))}
       </div>
