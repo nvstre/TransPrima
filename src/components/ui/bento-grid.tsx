@@ -20,7 +20,7 @@ export const BentoGrid = ({ className, children }: BentoGridProps) => {
   return (
     <div
       className={cn(
-        "grid auto-rows-[12rem] md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 max-w-7xl mx-auto mb-8",
+        "grid auto-rows-[14rem] md:auto-rows-[20rem] grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-7xl mx-auto mb-8",
         className
       )}
     >
@@ -39,7 +39,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl p-6 bg-gradient-to-br from-neutral-900/80 to-neutral-800/60 backdrop-blur-md border border-neutral-700/50 justify-between flex flex-col space-y-4 hover:from-neutral-800/90 hover:to-neutral-700/70 hover:border-neutral-600/60 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl group cursor-pointer",
+        "row-span-1 rounded-xl p-8 bg-gradient-to-br from-neutral-900/80 to-neutral-800/60 backdrop-blur-md border border-neutral-700/50 justify-between flex flex-col space-y-4 hover:from-neutral-800/90 hover:to-neutral-700/70 hover:border-neutral-600/60 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl group cursor-pointer",
         className
       )}
     >
@@ -61,7 +61,7 @@ export const BentoGridItem = ({
             {title}
           </div>
         </div>
-        <div className="font-sans font-normal text-gray-300 text-sm leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+        <div className="font-sans font-normal text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
           {description}
         </div>
       </div>

@@ -26,7 +26,7 @@ export function GlowingEffectDemo() {
           area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
           icon={<Lock className="h-6 w-6" />}
           title="Transport cu prelate (normale și mega)"
-          description="Dispunem de logistică proprie și trei motostivuitoare pentru operațiuni rapide și eficiente în depozit — de la recepție la încărcare."
+          description="Oferim camioane acoperite cu prelată standard sau dimensiuni mari. Ideale pentru protejarea mărfurilor de intemperii sau manipulări."
           image="https://cdn.discordapp.com/attachments/1118816420600492042/1404590789425627146/assets2Ftask_01k2dkc9bkf8mvhxraf2dqg23w2F1754950822_img_0.png?ex=689bbe9c&is=689a6d1c&hm=abd4c1c81236d9ceeacfc483e446fbd443cdca40b782db5cde89eb29b0fe7902&"
         />
         <GridItem
@@ -40,7 +40,7 @@ export function GlowingEffectDemo() {
           area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
           icon={<Search className="h-6 w-6" />}
           title="Asigurare extinsă a transportului"
-          description="Fiecare transport este asigurat până la 1.500.000 € — un plus de siguranță și liniște pentru clienți."
+          description="Fiecare transport este asigurat până la 1.500.000 €,  un plus de siguranță și liniște pentru clienți."
           image="https://cdn.discordapp.com/attachments/1118816420600492042/1404592776288403588/assets2Ftask_01k2dkv9t6e9yv5x9mh5ecpgsf2F1754951291_img_0.png?ex=689bc075&is=689a6ef5&hm=bc2e48e0fb73cb1acbe7d138605d8ae407da555cc72d72d797cbdaabeca45884&"
         />
       </ul>

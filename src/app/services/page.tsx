@@ -25,7 +25,6 @@ export default function ServicesPage() {
                 <h4 className="font-semibold text-xl md:text-2xl mb-4">Transport Intern</h4>
                 <ul className="space-y-3 text-gray-300">
                   <li>• Livrări rapide în toată România</li>
-                  <li>• Urmărire în timp real</li>
                   <li>• Asigurare completă a mărfii</li>
                   <li>• Echipă profesională</li>
                 </ul>
@@ -33,12 +32,19 @@ export default function ServicesPage() {
               <div>
                 <h4 className="font-semibold text-xl md:text-2xl mb-4">Transport International</h4>
                 <ul className="space-y-3 text-gray-300">
-                  <li>• Acoperire în toată Europa</li>
                   <li>• Documentație vamală</li>
                   <li>• Respectarea termenelor</li>
                   <li>• Preturi competitive</li>
                 </ul>
               </div>
+            </div>
+            
+            {/* Description area */}
+            <div className="mt-8 pt-6 border-t border-gray-600">
+              <h4 className="text-lg font-semibold text-white mb-3">Descriere Serviciu</h4>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Oferim transport rutier pe întreg teritoriul României și în anumite zone din Europa, cu rute optimizate și monitorizare constantă a încărcăturilor. Fie că este vorba de mărfuri generale, produse industriale sau transporturi speciale, garantăm livrarea la timp și în condiții de siguranță maximă.
+              </p>
             </div>
           </div>
 
@@ -72,11 +78,18 @@ export default function ServicesPage() {
                 <h4 className="font-semibold text-xl md:text-2xl mb-4">Caracteristici</h4>
                 <ul className="space-y-3 text-gray-300">
                   <li>• Încărcături de 1-10 paleți</li>
-                  <li>• Livrare în 24-48h</li>
                   <li>• Manipulare specializată</li>
                   <li>• Rapoarte detaliate</li>
                 </ul>
               </div>
+            </div>
+            
+            {/* Description area */}
+            <div className="mt-8 pt-6 border-t border-gray-600">
+              <h4 className="text-lg font-semibold text-white mb-3">Descriere Serviciu</h4>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Soluția ideală pentru transporturi de volum redus sau parțial, LTL îți permite să partajezi spațiul din camion cu alte încărcături compatibile. Astfel, beneficiezi de un cost mai redus, fără a compromite calitatea serviciului.
+              </p>
             </div>
           </div>
 
@@ -116,6 +129,14 @@ export default function ServicesPage() {
                 </ul>
               </div>
             </div>
+            
+            {/* Description area */}
+            <div className="mt-8 pt-6 border-t border-gray-600">
+              <h4 className="text-lg font-semibold text-white mb-3">Descriere Serviciu</h4>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Atunci când ai nevoie ca întreg camionul să fie dedicat încărcăturii tale, serviciul FTL este alegerea perfectă. Oferim transport direct, fără opriri intermediare, pentru volume mari sau mărfuri de mare valoare.
+              </p>
+            </div>
           </div>
 
          </div>
@@ -134,7 +155,7 @@ export default function ServicesPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
               Serviciile Noastre
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mt-4">
+            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mt-4">
               Soluții complete de transport și logistică pentru afacerea dumneavoastră
             </p>
           </div>
@@ -154,36 +175,33 @@ export default function ServicesPage() {
                 <div className="h-auto lg:h-[40rem]">
                   <div className="text-center mb-6">
                     <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
-                      Caracteristici Avansate
+                      De ce să alegi Trans Prima
                     </h2>
-                    <p className="text-sm md:text-base text-gray-600 dark:text-gray-400">
-                      Tehnologii moderne pentru servicii de calitate superioară
-                    </p>
                   </div>
                   <BentoGrid className="max-w-4xl mx-auto mt-6 h-auto lg:h-full">
                      <BentoGridItem
-                       title="Urmărire în Timp Real"
-                       description="Monitorizați transporturile 24/7 cu sistemul nostru avansat de urmărire GPS."
+                       title="Experiență de peste 30 de ani în transporturi"
+                       description="Din 1994, Trans Prima livrează soluții de transport rutier adaptate nevoilor pieței locale și internaționale."
                        icon={<Globe className="h-5 w-5" />}
-                       className="md:col-span-2"
+                       className="md:col-span-1"
                      />
                      <BentoGridItem
-                       title="Livrare Express"
-                       description="Livrări rapide și sigure în toată Europa."
+                       title="Flotă modernă și diversificată"
+                       description="Operăm cu peste 45 de capete tractor și 60 de semiremorci"
                        icon={<Truck className="h-5 w-5" />}
                        className="md:col-span-1"
                      />
                      <BentoGridItem
-                       title="Depozitare Securizată"
-                       description="Depozite cu temperatură controlată pentru mărfurile dumneavoastră."
+                       title="Logistică proprie și manipulare rapidă"
+                       description="Deținem platformă logistică proprie, spații de depozitare și echipamente performante pentru încărcare și descărcare."
                        icon={<Warehouse className="h-5 w-5" />}
                        className="md:col-span-1"
                      />
                      <BentoGridItem
-                       title="Soluții Personalizate"
-                       description="Soluții logistice adaptate nevoilor specifice ale afacerii dumneavoastră."
+                       title="Siguranță și conformitate garantată"
+                       description="Respectăm toate reglementările europene și oferim asigurare extinsă de până la 1.500.000 €, pentru protecția totală a mărfurilor."
                        icon={<Package className="h-5 w-5" />}
-                       className="md:col-span-2"
+                       className="md:col-span-1"
                      />
                   </BentoGrid>
                 </div>
